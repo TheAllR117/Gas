@@ -26,17 +26,18 @@ class MapBloc extends Bloc<MapEvent, MapState> {
     color: Colors.transparent,
     endCap: Cap.squareCap,
     geodesic: false,
-    width: 6,
+    width: 3,
   );
 
   //Polylines destination
   Polyline _myRountDestination = new Polyline(
     polylineId: PolylineId('my_rount_destination'),
     patterns: [PatternItem.dash(80), PatternItem.gap(40)],
-    color: Colors.white,
+    jointType: JointType.round,
+    color: Color.fromRGBO(252, 214, 51, 0.5),
     endCap: Cap.squareCap,
-    geodesic: false,
-    width: 6,
+    geodesic: true,
+    width: 3,
   );
 
   void initMap(GoogleMapController controller) {

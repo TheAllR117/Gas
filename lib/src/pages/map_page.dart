@@ -87,7 +87,7 @@ class _MapaPageState extends State<MapaPage> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             BtnLocation(),
-            BtnFollowLocation(),
+            //BtnFollowLocation(),
             //BtnRount(),
             //BtnStation()
           ],
